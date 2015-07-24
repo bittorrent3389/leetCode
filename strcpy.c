@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h> // for strlen
 void myStrcpy(char *s, char *t){
+//	printf("myStrcpy : strlen(t)+1 %zu\n", strlen(t)+1);
 	while(*s++ = *t++);
 }
 void main(void) {
@@ -11,8 +12,8 @@ void main(void) {
 	printf("%zd\n", sizeof(t));    // pointer size
 	printf("strlen(t)+1 %zu\n", strlen(t)+1);  // array size
 	printf("strlen(g)+1 %zu\n", strlen(g)+1);
-	while(*s++ = *t++);
-//	myStrcpy(s,t);
+//	while(*s++ = *t++);
+	myStrcpy(s,t);
 	s-=12;
 	puts(s);
 	puts(g);

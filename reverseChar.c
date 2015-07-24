@@ -9,9 +9,7 @@ void reverse(char* s){
 	int i, count = 0;
 	puts(s);
 	char* t = s;
-	while(*t++) 
-		count++;
-	printf("count: %d \n", count);
+	while(*t++) count++;
 	for( i = 0; i < count/2 ; i++ )
 		swap( &s[i], &s[count-i-1] );
 }
